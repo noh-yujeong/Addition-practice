@@ -1,0 +1,123 @@
+'''
+
+(주석)오늘 8월 11일 파이썬 기초 특강
+기초예제
+
+'''
+kor=int(input('국어?'))
+eng=int(input('영어?'))
+mat=int(input('수학?'))
+
+tot=kor+eng+mat  #총점구하는 부분 
+avg=tot/3        #평균구하는 부분
+
+
+print('평균은'+str(avg))
+
+kor=[90,77,88,65,95,100]
+kor[1]=70
+
+eng=list()
+print(type(eng))
+li=['a','b','c','d','e']
+
+li2=li
+li2[1]='bb'
+print(li)
+print(li2)      #참조의 개념
+
+li.append('f')
+li.append('g')
+
+print(li)#항상 마지막에 추가한다.
+
+tot=0
+
+for i in range(1,1001):
+    str(i)
+
+
+#tu=1,2,3,4,5가능
+#tu=1,
+#tu=1,2,3,4,5,가능
+
+#tu=(1)는 int-괄호는 계산우선순위와 같은 것
+#tu=('a')는 str-
+
+
+tu=1,2,3,4,5
+
+print(type(tu))
+
+#tu=tuple()도 가능
+#swap공식
+
+a=7
+b=5
+t=a
+a=b
+b=t
+
+print(a)
+print(b)
+
+#파이썬은 임시변수를 안하고 교환가능
+#a,b=b,a
+#형변환은 안됨
+#함수의 인자는 튶플로 전달됨
+
+add(5,6)
+
+#a={}는 딕셔너리이다.중괄호안에 값이 없을때#초기화
+a=set()
+print(type(a))
+
+a={1,2,3,4,7,5,8,6}
+
+#순서를 알수없다.순서보장안함
+print(a[0])
+
+#세트형은 인덱스로 설명불가
+#세트의 특징: distinct가능
+
+#a=set(dic)
+#세트 생성하기
+#set함수
+
+#인터섹션
+#합집합,차집합,교집합,대칭차집합
+a={1,2,3}
+b={2,3,4}
+print(a^b)
+
+ dic={'kor':80,'eng':90,'mat':77}
+ print(dic[0])
+ print(dic['eng'])
+ #dict는 set의 확장형
+
+#dic.update(dic2)
+li=[['a','b'],['c','d'],['e','g']]
+print(li[1][1])
+#이차원리스트
+#dict(li)
+#딕셔너리로 바꾸기
+print(dict(li))
+
+#del dic['eng']
+#dic.clear()
+#***************dic.get('키',default값)
+
+
+
+#print(dic.keys())
+#print(dic.values())
+
+
+#print(list(dic.values()))
+#print(tup(dic.values()))
+
+#print((dic.items())
+#참조기능
+'''
+리스트는 복사하는 방법이 1)리스트에넣기,2)슬라이스하기3)copy()함수이용하기
+'''
